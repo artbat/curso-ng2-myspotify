@@ -1,0 +1,42 @@
+<div id="album" *ngIf="album">
+    <header class="album-header">
+        <div class="row">
+            <div class="col-md-4">
+                <div *ngIf="album.images.length > 0">
+                    <img class="album-thumb" src="{{album.images[0].url}}">
+                </div>
+            </div>
+            <div class="col-md-8">
+                <h4 *ngIf="album.artists.length > 0"><span *ngFor="let artist of album.artists">
+                {{artist.name}}
+                </span></h4>
+                <h2>{{album.name}}</h2>
+                <h5>Fecha publicación: {{album.release_date | date:"dd/MM/yyyy"}}</h5>
+                <a class="btn btn-primary" target="_blank" href="{{album.external_urls.spotify}}">Escuchar en Spotify</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="album-tracks">
+        <h4>Pistas del album</h4>
+        <table class="table table-striped table-hover ">
+            <thead>
+            <tr>
+                <th class="col-xs-1">Nº</th>
+                <th class="col-xs-9">Nombre</th>
+                <th class="col-xs-1">Duración</th>
+                <th class="col-xs-1" style="text-align: right">Escuchar</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr *ngFor="let track of tracks">
+                <td class="col-xs-1">{{track.track_number}}</td>
+                <td class="col-xs-9">{{track.name}}</td>
+                <td class="col-xs-1">{{track.duration_ms}}</td>
+                <td class="col-xs-1" style="text-align: right"><a href="{{track.preview_url}}" class="btn btn-primary btn-xs" target="_blank">Escuchar</a></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+</div>

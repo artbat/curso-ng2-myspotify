@@ -15,7 +15,7 @@
                 <div class="col-md-3">
                     <div class="well album">
                         <div *ngIf="album.images.length > 0">
-                            <a href="#">
+                            <a routerLink="/album/{{album.id}}">
                                 <img src="{{album.images[0].url}}" class="album-thumb img-thumbnail">
                             </a>
                             <h5>{{album.name}}</h5>
