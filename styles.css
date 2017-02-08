@@ -1,0 +1,44 @@
+.navbar {
+    margin-bottom: 0;
+}
+
+.main {
+    border-bottom: #000 1px solid;
+    padding: 20px 0;
+}
+
+.artist-header {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: solid 1px #000;
+}
+
+.artist-thumb {
+    width: 80px;
+    height: auto;
+    float: left;
+    margin-right: 10px;
+}
+
+.artist-albums .well {
+    margin-bottom: 20px;
+    overflow: auto;
+    min-height: 350px;
+    border-radius: 0px;
+}
+
+.album {
+    text-align: center;
+    background: #151515;
+    padding: 10px 20px;
+    border: #000 1px solid;
+}
+
+.album-thumb {
+    width: 100%;
+}
+
+.search-res .well {
+    padding-top: 1px;
+    padding-bottom: 10px;
+}
