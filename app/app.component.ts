@@ -3,9 +3,7 @@ import { Component } from '@angular/core';
 
 @Component({
    selector: 'my-app',
-   template: `
-        <h1>{{pageTitle}}</h1>
-    `
+   templateUrl: './app/app.component.html'
 })
 export class AppComponent {
    pageTitle:string = 'Mi primera app Angular 2';
