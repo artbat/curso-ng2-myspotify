@@ -7,9 +7,12 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { AboutComponent } from './about/about.component';
 import { SearchComponent } from './search/search.component';
 
+import { AppRoutesModule } from './app.routes';
+
 @NgModule({
    imports: [
-      BrowserModule
+      BrowserModule,
+      AppRoutesModule
    ],
    declarations: [
       AppComponent,
