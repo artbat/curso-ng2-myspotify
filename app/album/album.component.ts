@@ -24,6 +24,10 @@ export class AlbumComponent {
       private _route:ActivatedRoute
    ){}
    
+   onPopularityClicked(popularity){
+      console.log(`La popularidad es del ${popularity}%!`);
+   }
+   
    ngOnInit() {
       this._route.params
          .map(params => params['id'])

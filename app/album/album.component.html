@@ -11,6 +11,10 @@
                 {{artist.name}}
                 </span></h4>
                 <h2>{{album.name}}</h2>
+                <popularity
+                    [rating]='album.popularity'
+                    (popularityClicked)='onPopularityClicked($event)'>
+                </popularity>
                 <h5>Fecha publicación: {{album.release_date | date:"dd/MM/yyyy"}}</h5>
                 <a class="btn btn-primary" target="_blank" href="{{album.external_urls.spotify}}">Escuchar en Spotify</a>
             </div>

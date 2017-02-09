@@ -11,6 +11,7 @@ import { AboutComponent } from './about/about.component';
 import { SearchComponent } from './search/search.component';
 import { ArtistComponent } from "./artist/artist.component";
 import { AlbumComponent } from "./album/album.component";
+import { PopularityComponent } from "./shared/popularity.component";
 
 //Pipes
 import { msToTimePipe } from "./shared/ms-to-time.pipe";
@@ -35,6 +36,7 @@ import { AppRoutesModule } from './app.routes';
       SearchComponent,
       ArtistComponent,
       AlbumComponent,
+      PopularityComponent,
       msToTimePipe
    ],
    providers: [
